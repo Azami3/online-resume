@@ -1,0 +1,161 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    display: flex;
+    background: navy;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.left-contents {
+    padding: 2rem 3rem;
+}
+
+.main-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    list-style-type: none;
+}
+
+.left {
+    min-height: 100%;
+    background-color: #77B0AA;
+    border: 1px solid black;
+}
+
+.profile {
+    width: 100%; 
+}
+
+.image {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.profile img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 70%;
+    border: 3px solid #002333;
+    margin-top: 2rem;
+}
+
+.main-title {
+    font-size: 1.8rem;
+    color: #000000ec;
+    padding-top: 4rem;
+    font-family: 'Anonymous Pro', monospace;
+    margin-left: 1rem;
+}
+
+.contact ul {
+    padding-top: 1rem;
+    margin-left: 30px;
+}
+
+.contact ul li {
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.contact ul li i {
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.contact ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.skill ul {
+    padding-top: 2rem;
+}
+
+.skill ul li {
+    padding: .4rem 0;
+    color: #000000;
+    margin-left: 30px;
+}
+
+.name {
+    padding: 2rem 3rem;
+}
+
+.achievements ul {
+    padding-top: 2rem;
+}
+
+.achievements ul li {
+    padding: .4rem 0;
+    color: #000000;
+    margin-left: 30px;
+}
+
+.achievements-list {
+    position: relative;
+    color: #000000;
+    font-size: 1rem;
+    margin-left: 30px;
+}
+
+.right {
+    background-color: #E3FEF7;
+    border: 1px solid black;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.first-name {
+    font-size: 30px;
+    padding: 1rem;
+    position: relative;
+    margin: 1;
+
+}
+
+.introduction {
+    padding: 4rem;
+    min-height: 10%;
+}
+
+.seminar-list {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.education-list {
+    list-style-type: square;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr; 
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .profile img {
+        max-width: 150px; 
+    }
+}
